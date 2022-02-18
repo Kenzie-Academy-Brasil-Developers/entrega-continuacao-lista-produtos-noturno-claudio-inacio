@@ -2,6 +2,17 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+h1{
+    color: blue;
+    background-color: #009f5a;
+    max-width: 50%;
+    margin: auto;
+    border-radius: 3px 3px;
+    padding: 3px;
+    
+}
+
 /* CABEÇALHO */
 .filtersContainer {
     display: flex;
@@ -48,12 +59,11 @@ body {
 }
 
 /* CONTEÚDO */
-main{
+main{ 
     display: flex;
     padding: 30px;
     margin: 0 auto;
-    max-width: 1280px;
-}
+    max-width: 1280px;}
 
 .containerListaProdutos {
     width: 100%;
@@ -68,7 +78,7 @@ main{
     justify-content: center;
 }
 
-.containerListaProdutos ul li:not(ol li) {
+.containerListaProdutos ul li {
     color: black;
     font-weight: bold;
     padding: 20px;
@@ -76,6 +86,12 @@ main{
     border-radius: 5px;
     transition: ease-in-out .1s;
     width: 20%;
+    background-color: #009f5a;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 400px;
 }
 
 .containerListaProdutos ul li:not(ol li):hover {
@@ -99,6 +115,18 @@ main{
     font-weight: 500;
     margin-top: 10px;
     display: inline-block;
+    
+}
+
+.containerListaProdutos ul li li{
+    color: white;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 8px;
+    padding: 3px;
+    font-size: 12px;
+    list-style: circle;
+
 }
 
 .containerListaProdutos ul li button {
@@ -109,6 +137,7 @@ main{
     color: white;
     cursor: pointer;
     height: 40px;
+    
 }
 .containerListaProdutos ul li button:hover {
     box-shadow: 1px 1px 2px rgb(189, 189, 189);
@@ -121,6 +150,17 @@ main{
 .containerListaProdutos ul li ol li{
     font-size: 13px;
     margin: 7px 0;
+    color: white;
+}
+
+.containerListaProdutos ul li button{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 50px;
+    
 }
 
 /* PREÇO TOTAL */
@@ -134,15 +174,13 @@ main{
 }
 .containerPrecoTotal p span{}
 
-
-
 .containerCarrinho {
     width: 450px;
     text-align: center;
     border: 1px solid #ccc;
 }
 .containerCarrinho img {
-    max-width: 100px;
+    max-width: 75px;
 }
 .containerCarrinho ul {
     
@@ -150,7 +188,7 @@ main{
     flex-direction: column;
 }
 .containerCarrinho button {
-    display: none;
+    /*display: none;*/
 }
 .containerCarrinho li {
     display: flex;
